@@ -1,0 +1,28 @@
+.encabezado{
+    background-color: rgb(0, 0, 0);
+    color:rgb(134, 227, 255);
+    font-family: 'Courier New', Courier, monospace;
+    border: 5px dashed #4de4ff;
+    padding: 20px;
+    display: flex;
+}
+
+.parrafito{
+    background-color: rgb(27, 68, 83);
+    color:rgb(134, 227, 255);
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px dashed #4de4ff;
+    padding: 5px;
+    display: flex;
+}
+
+.imgborder{
+    border-radius: 5%;
+    border-color: rgb(134, 227, 255);
+}
+
+.link{
+    background-color: rgb(0, 0, 0);
+    color:rgb(134, 227, 255);
+    font-family: 'Courier New', Courier, monospace;
+}
