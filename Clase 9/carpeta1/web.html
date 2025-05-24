@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P&aacute;gina Web</title>
+    <link rel="icon" href="carpeta1/logo-BA-1.png">
+    <style>
+        .body {
+            background-color: rgb(202, 150, 86);
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-style: italic;
+            letter-spacing: 1cap;
+        }
+
+        .block {
+            display: block;
+            background-color: rgb(255, 44, 125);
+            margin: 5px 0;
+            padding: 10px;
+        }
+
+        .inline {
+            display: inline;
+            background-color: rgb(85, 145, 235);
+            padding: 5px;
+        }
+
+        .inline-block {
+            display: inline-block;
+            background-color: rgb(218, 128, 240);
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .absolute {
+            background-color: rgb(150, 255, 13);
+            color: aliceblue;
+            position: static;
+            top: 0;
+            right: 0;
+        }
+
+        .absolute-container {
+            position: relative;
+            border: 2px dashed #888;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .zindex-box1 {
+            position: absolute;
+            top: 60px;
+            left: 60px;
+            background-color: rgb(236, 140, 15);
+            z-index: 1;
+        }
+
+        .zindex-box2 {
+            position: absolute;
+            top: 80px;
+            left: 80px;
+            background-color: crimson;
+            z-index: 2;
+        }
+
+        .overflow-scroll {
+            overflow: scroll;
+            height: 150px;
+            background-color: #d4edda;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <h1 class="body">
+            Bienvenidos al instituto
+        </h1>
+    </p>
+    <p>
+        <h3 class="inline">
+            Subtitulo de la p&aacute;gina web.
+        </h3>
+    </p>
+    <p>
+        <h3 class="block">
+            Bloques de Inline
+        </h3>
+        <div class="inline-block">Bloque 1</div>
+        <div class="inline-block">Bloque 2</div>
+        <div class="inline-block">Bloque 3</div>
+    </p>
+
+    <p>
+        <h1 class="absolute">
+            Caja
+        </h1>
+        <h1 class="absolute-container">
+            Caja 2
+        </h1>
+    </p>
+    <p>
+        <div class="contenedor overflow-scroll">
+            <h3>Titulo</h3>
+            <li>
+                A
+            </li>
+            <li>
+                B
+            </li>
+            <li>
+                C
+            </li>
+            <li>
+                D
+            </li>
+            <li>
+                E
+            </li>
+            <li>
+                F
+            </li>
+        </div>
+    </p>
+</body>
+</html>

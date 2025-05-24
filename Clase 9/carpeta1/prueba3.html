@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Overflow y Float</title>
+    <style>
+        .contenedor {
+            width: 300px;
+            border: 2px solid #333;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+
+        /* Overflow ejemplos */
+        .overflow-hidden {
+            overflow: hidden;
+            height: 50px;
+            background-color: #cce5ff;
+        }
+
+        .overflow-scroll {
+            overflow: scroll;
+            height: 50px;
+            background-color: #d4edda;
+        }
+
+        .overflow-auto {
+            overflow: auto;
+            height: 50px;
+            background-color: #fff3cd;
+        }
+
+        /* Float ejemplos */
+        .float-left {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: #f8d7da;
+            margin-right: 10px;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .float-right {
+            float: right;
+            width: 100px;
+            height: 100px;
+            background-color: #d1ecf1;
+            margin-left: 10px;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        /* Clearfix para limpiar floats */
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Ejemplo Overflow</h3>
+    <div class="contenedor overflow-hidden">
+        Contenido muy largo que se corta con <code>overflow: hidden;</code>
+    </div>
+    <div class="contenedor overflow-scroll">
+        Contenido muy largo que muestra scroll con <code>overflow: scroll;</code>
+    </div>
+    <div class="contenedor overflow-auto">
+        Contenido muy largo que muestra scroll sólo cuando es necesario con <code>overflow: auto;</code>
+    </div>
+    <h3>Ejemplo Float y Clearfix</h3>
+    <div class="contenedor clearfix">
+        <div class="float-left">Float Left</div>
+        <div class="float-right">Float Right</div>
+        <p>Este párrafo está dentro del contenedor con clearfix, que limpia los floats para que el contenedor abarque
+            ambos elementos flotantes.</p>
+    </div>
+</body>
+
+</html>

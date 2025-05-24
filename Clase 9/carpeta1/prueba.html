@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block {
+            display: block;
+            background-color: lightblue;
+            margin: 5px 0;
+            padding: 10px;
+        }
+
+        .inline {
+            display: inline;
+            background-color: lightgreen;
+            padding: 5px;
+        }
+
+        .inline-block {
+            display: inline-block;
+            background-color: lightcoral;
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            text-align: center;
+            line-height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>Elemento Block</h3>
+    <div class="block">Este es un div (block)</div>
+    <div class="block">Ocupa todo el ancho disponible</div>
+
+    <h3>Elemento Inline</h3>
+    <p>
+        Texto con <span class="inline">un span</span> y <span class="inline">otro span</span> (inline).
+    </p>
+
+    <h3>Elemento Inline-block</h3>
+    <div class="inline-block">Caja 1</div>
+    <div class="inline-block">Caja 2</div>
+    <div class="inline-block">Caja 3</div>
+
+</body>
+
+</html>

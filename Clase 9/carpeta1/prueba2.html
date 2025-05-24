@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Posicionamiento en CSS</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: sans-serif;
+        }
+
+        .caja {
+            width: 150px;
+            height: 100px;
+            padding: 10px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .static {
+            background-color: steelblue;
+            position: static;
+        }
+
+        .relative {
+            background-color: darkorange;
+            position: relative;
+            top: 20px;
+            left: 20px;
+        }
+
+        .absolute-container {
+            position: relative;
+            border: 2px dashed #888;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .absolute {
+            background-color: darkred;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .fixed {
+            background-color: seagreen;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        .zindex-box1 {
+            position: absolute;
+            top: 60px;
+            left: 60px;
+            background-color: purple;
+            z-index: 1;
+        }
+
+        .zindex-box2 {
+            position: absolute;
+            top: 80px;
+            left: 80px;
+            background-color: crimson;
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="caja static">static</div>
+
+    <div class="caja relative">relative</div>
+
+    <div class="absolute-container">
+        <p>Contenedor relativo</p>
+        <div class="caja absolute">absolute</div>
+    </div>
+    <div class="caja fixed">fixed</div>
+    <div class="caja zindex-box1">z-index: 1</div>
+    <div class="caja zindex-box2">z-index: 2</div>
+</body>
+
+</html>
